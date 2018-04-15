@@ -1,0 +1,1498 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@font-face {
+  font-family: "Open Sans Condensed Light";
+  src: url(../fonts/OpenSans-CondLight.ttf);
+}
+
+/* reset browser styles */
+/* line 13, scss/style.scss */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 20, scss/style.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 23, scss/style.scss */
+body {
+  line-height: 1.2;
+}
+
+/* line 26, scss/style.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 30, scss/style.scss */
+ol {
+  padding-left: 1.4em;
+  list-style: decimal;
+}
+
+/* line 34, scss/style.scss */
+ul {
+  padding-left: 1.4em;
+  list-style: square;
+}
+
+/* line 38, scss/style.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 42, scss/style.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 47, scss/style.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* end reset browser styles */
+/* line 57, scss/style.scss */
+h1, h2, h3, h4, a, p, #latestnews, .latestnews-subject {
+  font-family: "Open Sans";
+}
+
+/* line 61, scss/style.scss */
+span {
+  font-family: "Open Sans Condensed Light";
+  font-weight: 300;
+}
+
+/* line 66, scss/style.scss */
+#hr-line {
+  color: rbg(104, 104, 104);
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -mz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  font-family: "Open Sans";
+  margin-top: 20px;
+}
+/* line 76, scss/style.scss */
+#hr-line hr {
+  border: none;
+  border-top: 1px solid white;
+  border-right-color: #686868;
+  border-bottom: 1px solid #e4e4e4;
+  border-left-color: #686868;
+  margin-bottom: 58px;
+  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -mz-box-sizing: content-box;
+  -o-box-sizing: content-box;
+  width: 100%;
+  font-size: 0;
+}
+
+.lang {
+	position: relative;
+	top: -10px;
+	right: 15px;
+}
+
+.disable-link {
+	color: grey;
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 93, scss/style.scss */
+  select {
+    display: none;
+  }
+
+  /* line 96, scss/style.scss */
+  nav {
+    background: white !important;
+    border-bottom: none !important;
+  }
+  /* line 99, scss/style.scss */
+  nav .container {
+    margin: 0 auto;
+  }
+  /* line 101, scss/style.scss */
+  nav .container .row {
+    height: 133px;
+    padding-top: 40px;
+  }
+  /* line 104, scss/style.scss */
+  nav .container .row a {
+    font-size: 17px;
+  }
+  /* line 106, scss/style.scss */
+  nav .container .row a:hover {
+    color: #f3c26d !important;
+    background: none;
+  }
+  /* line 112, scss/style.scss */
+  nav .container .row .active a {
+    background: none;
+    color: #f3c26d;
+  }
+  /* line 115, scss/style.scss */
+  nav .container .row .active a:hover {
+    background: none;
+  }
+
+  /* line 122, scss/style.scss */
+  #myCarousel {
+    top: 133px;
+  }
+
+  /* line 125, scss/style.scss */
+  #myCarousel img {
+    width: 100%;
+  }
+
+  /* line 129, scss/style.scss */
+  #latest-news, #get-in-touch {
+    background: url("../images/wooden-bg2.jpg");
+    margin-top: 133px;
+    padding-top: 2%;
+    padding-bottom: 5%;
+  }
+  /* line 134, scss/style.scss */
+  #latest-news #latest-news-title, #get-in-touch #latest-news-title {
+    color: white;
+    font-weight: 400;
+    font-size: 33px;
+  }
+  /* line 140, scss/style.scss */
+  #latest-news .row .latest-news-content, #get-in-touch .row .latest-news-content {
+    padding-left: 100px;
+  }
+  /* line 142, scss/style.scss */
+  #latest-news .row .latest-news-content span, #get-in-touch .row .latest-news-content span {
+    color: #69584d;
+    font-size: 65px;
+    float: left;
+  }
+  /* line 147, scss/style.scss */
+  #latest-news .row .latest-news-content .latest-news-details, #get-in-touch .row .latest-news-content .latest-news-details {
+    color: white;
+    padding-left: 22%;
+    padding-top: 2%;
+  }
+  /* line 151, scss/style.scss */
+  #latest-news .row .latest-news-content .latest-news-details h4, #get-in-touch .row .latest-news-content .latest-news-details h4 {
+    font-size: 22px;
+  }
+  /* line 157, scss/style.scss */
+  #latest-news h2, #latest-news p, #latest-news li, #get-in-touch h2, #get-in-touch p, #get-in-touch li {
+    color: white;
+    list-style: none;
+  }
+  /* line 161, scss/style.scss */
+  #latest-news h2, #get-in-touch h2 {
+    font-size: 33px;
+  }
+  /* line 164, scss/style.scss */
+  #latest-news h3, #get-in-touch h3 {
+    color: white;
+    text-decoration: underline;
+    margin-bottom: 20px;
+  }
+  /* line 169, scss/style.scss */
+  #latest-news .phone, #get-in-touch .phone {
+    background: url("../images/telephone.png") no-repeat 35% center;
+  }
+  /* line 172, scss/style.scss */
+  #latest-news .fax, #get-in-touch .fax {
+    background: url("../images/fax.png") no-repeat 35% center;
+  }
+  /* line 175, scss/style.scss */
+  #latest-news li, #get-in-touch li {
+    margin-bottom: 15px;
+  }
+  /* line 179, scss/style.scss */
+  #latest-news .get-content p, #get-in-touch .get-content p {
+    margin-bottom: 30px;
+  }
+
+  /* line 185, scss/style.scss */
+  #about-wrapper {
+    margin-top: 133px;
+    background: url("../images/wooden-bg2.jpg");
+  }
+  /* line 188, scss/style.scss */
+  #about-wrapper #about-main {
+    padding-bottom: 80px;
+  }
+  /* line 190, scss/style.scss */
+  #about-wrapper #about-main h1 {
+    font-size: 33px;
+    color: white;
+    padding-top: 35px;
+    padding-bottom: 10px;
+  }
+  /* line 196, scss/style.scss */
+  #about-wrapper #about-main h3 {
+    font-size: 22px;
+    color: white;
+    padding-bottom: 10px;
+  }
+  /* line 201, scss/style.scss */
+  #about-wrapper #about-main img {
+    width: 100%;
+    height: 267px;
+    padding-bottom: 20px;
+  }
+  /* line 206, scss/style.scss */
+  #about-wrapper #about-main p {
+    color: white;
+    width: 90%;
+  }
+  /* line 210, scss/style.scss */
+  #about-wrapper #about-main ul {
+    margin-left: -20px;
+  }
+  /* line 212, scss/style.scss */
+  #about-wrapper #about-main ul li {
+    background: url("../images/list_marker.png") no-repeat left center;
+    color: white;
+    font-size: 14px;
+    list-style: none;
+    padding-left: 25px;
+    margin-bottom: 15px;
+  }
+
+  /* line 224, scss/style.scss */
+  #products, #material-content, #solution, #accessories, #reference, #associate {
+    background: #f5f5f5;
+    margin-top: 133px;
+    padding-bottom: 150px;
+  }
+  /* line 228, scss/style.scss */
+  #products h1, #material-content h1, #solution h1, #accessories h1, #reference h1, #associate h1 {
+    font-size: 33px;
+    color: #f3c26d;
+    font-family: "Open Sans";
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+  /* line 235, scss/style.scss */
+  #products h2, #material-content h2, #solution h2, #accessories h2, #reference h2, #associate h2 {
+    color: black;
+    font-size: 36px;
+    font-family: Arial;
+    font-weight: bold;
+    padding-top: 80px;
+    margin-bottom: -80px;
+  }
+  /* line 243, scss/style.scss */
+  #products p, #material-content p, #solution p, #accessories p, #reference p, #associate p {
+    padding-bottom: 15px;
+  }
+  /* line 246, scss/style.scss */
+  #products .products-content, #products .material-boxes, #material-content .products-content, #material-content .material-boxes, #solution .products-content, #solution .material-boxes, #accessories .products-content, #accessories .material-boxes, #reference .products-content, #reference .material-boxes, #associate .products-content, #associate .material-boxes {
+    width: 360px;
+    padding: 0;
+    margin: 0 15px;
+  }
+  /* line 250, scss/style.scss */
+  #products .products-content img, #products .material-boxes img, #material-content .products-content img, #material-content .material-boxes img, #solution .products-content img, #solution .material-boxes img, #accessories .products-content img, #accessories .material-boxes img, #reference .products-content img, #reference .material-boxes img, #associate .products-content img, #associate .material-boxes img {
+    width: 100%;
+    height: 267px;
+    margin-bottom: 40px;
+  }
+  /* line 255, scss/style.scss */
+  #products .products-content:hover:not(.material-boxes), #products .material-boxes:hover:not(.material-boxes), #material-content .products-content:hover:not(.material-boxes), #material-content .material-boxes:hover:not(.material-boxes), #solution .products-content:hover:not(.material-boxes), #solution .material-boxes:hover:not(.material-boxes), #accessories .products-content:hover:not(.material-boxes), #accessories .material-boxes:hover:not(.material-boxes), #reference .products-content:hover:not(.material-boxes), #reference .material-boxes:hover:not(.material-boxes), #associate .products-content:hover:not(.material-boxes), #associate .material-boxes:hover:not(.material-boxes) {
+    background: #f3c26d;
+  }
+  /* line 258, scss/style.scss */
+  #products .products-content a, #products .material-boxes a, #material-content .products-content a, #material-content .material-boxes a, #solution .products-content a, #solution .material-boxes a, #accessories .products-content a, #accessories .material-boxes a, #reference .products-content a, #reference .material-boxes a, #associate .products-content a, #associate .material-boxes a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    font-style: italic;
+  }
+  /* line 264, scss/style.scss */
+  #products .products-content p, #products .material-boxes p, #material-content .products-content p, #material-content .material-boxes p, #solution .products-content p, #solution .material-boxes p, #accessories .products-content p, #accessories .material-boxes p, #reference .products-content p, #reference .material-boxes p, #associate .products-content p, #associate .material-boxes p {
+    padding-bottom: 10px;
+    margin-top: -15px;
+  }
+
+  /* line 271, scss/style.scss */
+  #more {
+    background: whitesmoke;
+    margin-top: -1%;
+  }
+  /* line 274, scss/style.scss */
+  #more h4 {
+    font-size: 33px;
+    padding-top: 5%;
+    padding-bottom: 2%;
+  }
+  /* line 284, scss/style.scss */
+  #more .container .row .more-boxes .more-boxes-inner:hover, #more .container .row .get-boxes .more-boxes-inner:hover {
+    background: #f3c26d;
+    cursor: pointer;
+  }
+  /* line 288, scss/style.scss */
+  #more .container .row .more-boxes .more-boxes-inner p, #more .container .row .get-boxes .more-boxes-inner p {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 15px;
+    font-family: "Open Sans";
+    font-style: italic;
+  }
+  /* line 295, scss/style.scss */
+  #more .container .row .more-boxes .more-boxes-inner a, #more .container .row .get-boxes .more-boxes-inner a {
+    text-decoration: none;
+    color: black;
+  }
+
+  /* line 306, scss/style.scss */
+  #connect h4 {
+    font-size: 33px;
+    padding-top: 3%;
+    padding-bottom: 2%;
+  }
+  /* line 311, scss/style.scss */
+  #connect p {
+    font-size: 14px;
+  }
+  /* line 314, scss/style.scss */
+  #connect span {
+    font-size: 38px;
+    padding-bottom: 4%;
+  }
+
+  /* line 320, scss/style.scss */
+  #map {
+    width: 100%;
+    height: 245px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  /* line 323, scss/style.scss */
+  #map iframe {
+    width: 100%;
+    height: 245px;
+    position: absolute;
+    z-index: -1;
+  }
+  /* line 329, scss/style.scss */
+  #map img {
+    position: absolute;
+    left: 50%;
+    margin-top: 4%;
+  }
+  /* line 334, scss/style.scss */
+  #map p {
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    text-align: center;
+    margin-top: 7.5%;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+  }
+
+  /* line 346, scss/style.scss */
+  footer {
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+
+  /* line 352, scss/style.scss */
+  #back-top {
+    border: 4px solid #f5f3f2;
+    position: fixed;
+    border-radius: 50%;
+    -o-border-radius: 50%;
+    -mz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    color: black;
+    background: white;
+    width: 46px;
+    height: 46px;
+    right: 40px;
+    bottom: 40px;
+	transition: border 0.2s ease;
+  }
+  /* line 365, scss/style.scss */
+  #back-top:hover {
+    cursor: pointer;
+    border: 4px solid black;
+  }
+  /* line 369, scss/style.scss */
+  #back-top span {
+    color: #474747;
+  }
+  /* line 371, scss/style.scss */
+  #back-top span i {
+    padding-top: 25%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 379, scss/style.scss */
+  select {
+    display: none;
+  }
+
+  /* line 382, scss/style.scss */
+  nav {
+    background: white !important;
+    border-bottom: none !important;
+  }
+  /* line 385, scss/style.scss */
+  nav .container {
+    margin: 0 auto;
+  }
+  /* line 387, scss/style.scss */
+  nav .container .row {
+    height: 133px;
+    padding-top: 40px;
+  }
+  /* line 390, scss/style.scss */
+  nav .container .row a {
+    font-size: 17px;
+  }
+  /* line 392, scss/style.scss */
+  nav .container .row a:hover {
+    color: #f3c26d !important;
+    background: none;
+  }
+  /* line 398, scss/style.scss */
+  nav .container .row .active a {
+    background: none;
+    color: #f3c26d;
+  }
+  /* line 401, scss/style.scss */
+  nav .container .row .active a:hover {
+    background: none;
+  }
+
+  /* line 408, scss/style.scss */
+  #myCarousel {
+    top: 133px;
+  }
+
+  /* line 411, scss/style.scss */
+  #myCarousel img {
+    width: 100%;
+  }
+
+  /* line 415, scss/style.scss */
+  #latest-news, #get-in-touch {
+    background: url("../images/wooden-bg2.jpg");
+    margin-top: 133px;
+    padding-top: 2%;
+    padding-bottom: 5%;
+  }
+  /* line 420, scss/style.scss */
+  #latest-news #latest-news-title, #get-in-touch #latest-news-title {
+    color: white;
+    font-weight: 400;
+    font-size: 33px;
+  }
+  /* line 426, scss/style.scss */
+  #latest-news .row .latest-news-content, #get-in-touch .row .latest-news-content {
+    padding-left: 100px;
+  }
+  /* line 428, scss/style.scss */
+  #latest-news .row .latest-news-content span, #get-in-touch .row .latest-news-content span {
+    color: #69584d;
+    font-size: 65px;
+    float: left;
+  }
+  /* line 433, scss/style.scss */
+  #latest-news .row .latest-news-content .latest-news-details, #get-in-touch .row .latest-news-content .latest-news-details {
+    color: white;
+    padding-left: 25%;
+    padding-top: 2%;
+  }
+  /* line 437, scss/style.scss */
+  #latest-news .row .latest-news-content .latest-news-details h4, #get-in-touch .row .latest-news-content .latest-news-details h4 {
+    font-size: 22px;
+  }
+  /* line 443, scss/style.scss */
+  #latest-news h2, #latest-news p, #latest-news li, #get-in-touch h2, #get-in-touch p, #get-in-touch li {
+    color: white;
+    list-style: none;
+  }
+  /* line 447, scss/style.scss */
+  #latest-news h2, #get-in-touch h2 {
+    font-size: 33px;
+  }
+  /* line 450, scss/style.scss */
+  #latest-news h3, #get-in-touch h3 {
+    color: white;
+    text-decoration: underline;
+    margin-bottom: 20px;
+  }
+  /* line 455, scss/style.scss */
+  #latest-news .phone, #get-in-touch .phone {
+    background: url("../images/telephone.png") no-repeat 30% center;
+  }
+  /* line 458, scss/style.scss */
+  #latest-news .fax, #get-in-touch .fax {
+    background: url("../images/fax.png") no-repeat 30% center;
+  }
+  /* line 461, scss/style.scss */
+  #latest-news li, #get-in-touch li {
+    margin-bottom: 15px;
+  }
+  /* line 465, scss/style.scss */
+  #latest-news .get-content p, #get-in-touch .get-content p {
+    margin-bottom: 30px;
+  }
+
+  /* line 471, scss/style.scss */
+  #about-wrapper {
+    margin-top: 133px;
+    background: url("../images/wooden-bg2.jpg");
+  }
+  /* line 474, scss/style.scss */
+  #about-wrapper #about-main {
+    padding-bottom: 30px;
+  }
+  /* line 476, scss/style.scss */
+  #about-wrapper #about-main h1 {
+    font-size: 33px;
+    color: white;
+    padding-top: 35px;
+    padding-bottom: 10px;
+  }
+  /* line 482, scss/style.scss */
+  #about-wrapper #about-main h3 {
+    font-size: 22px;
+    color: white;
+    padding-bottom: 10px;
+  }
+  /* line 487, scss/style.scss */
+  #about-wrapper #about-main img {
+    width: 100%;
+    height: 348.328px;
+    padding-bottom: 20px;
+  }
+  /* line 492, scss/style.scss */
+  #about-wrapper #about-main p {
+    color: white;
+    width: 90%;
+  }
+  /* line 496, scss/style.scss */
+  #about-wrapper #about-main ul {
+    margin-left: -20px;
+  }
+  /* line 498, scss/style.scss */
+  #about-wrapper #about-main ul li {
+    background: url("../images/list_marker.png") no-repeat left center;
+    color: white;
+    font-size: 14px;
+    list-style: none;
+    padding-left: 25px;
+    margin-bottom: 15px;
+  }
+  /* line 508, scss/style.scss */
+  #about-wrapper #about-main #third-about img {
+    height: 678.313px;
+  }
+
+  /* line 515, scss/style.scss */
+  #products, #material-content, #solution, #accessories, #reference, #associate {
+    background: #f5f5f5;
+    margin-top: 133px;
+    padding-bottom: 150px;
+  }
+  /* line 519, scss/style.scss */
+  #products h1, #material-content h1, #solution h1, #accessories h1, #reference h1, #associate h1 {
+    font-size: 33px;
+    color: #f3c26d;
+    font-family: "Open Sans";
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+  /* line 526, scss/style.scss */
+  #products h2, #material-content h2, #solution h2, #accessories h2, #reference h2, #associate h2 {
+    color: black;
+    font-size: 36px;
+    font-family: Arial;
+    font-weight: bold;
+    padding-top: 80px;
+    margin-bottom: -80px;
+  }
+  /* line 534, scss/style.scss */
+  #products p, #material-content p, #solution p, #accessories p, #reference p, #associate p {
+    padding-bottom: 15px;
+  }
+  /* line 537, scss/style.scss */
+  #products .products-content, #products .material-boxes, #material-content .products-content, #material-content .material-boxes, #solution .products-content, #solution .material-boxes, #accessories .products-content, #accessories .material-boxes, #reference .products-content, #reference .material-boxes, #associate .products-content, #associate .material-boxes {
+    width: 293.328px;
+    padding: 0;
+    margin: 0 15px;
+  }
+  /* line 541, scss/style.scss */
+  #products .products-content img, #products .material-boxes img, #material-content .products-content img, #material-content .material-boxes img, #solution .products-content img, #solution .material-boxes img, #accessories .products-content img, #accessories .material-boxes img, #reference .products-content img, #reference .material-boxes img, #associate .products-content img, #associate .material-boxes img {
+    width: 100%;
+    height: 211.672px;
+    margin-bottom: 40px;
+  }
+  /* line 546, scss/style.scss */
+  #products .products-content:hover:not(.material-boxes), #products .material-boxes:hover:not(.material-boxes), #material-content .products-content:hover:not(.material-boxes), #material-content .material-boxes:hover:not(.material-boxes), #solution .products-content:hover:not(.material-boxes), #solution .material-boxes:hover:not(.material-boxes), #accessories .products-content:hover:not(.material-boxes), #accessories .material-boxes:hover:not(.material-boxes), #reference .products-content:hover:not(.material-boxes), #reference .material-boxes:hover:not(.material-boxes), #associate .products-content:hover:not(.material-boxes), #associate .material-boxes:hover:not(.material-boxes) {
+    background: #f3c26d;
+  }
+  /* line 549, scss/style.scss */
+  #products .products-content a, #products .material-boxes a, #material-content .products-content a, #material-content .material-boxes a, #solution .products-content a, #solution .material-boxes a, #accessories .products-content a, #accessories .material-boxes a, #reference .products-content a, #reference .material-boxes a, #associate .products-content a, #associate .material-boxes a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    font-style: italic;
+  }
+  /* line 555, scss/style.scss */
+  #products .products-content p, #products .material-boxes p, #material-content .products-content p, #material-content .material-boxes p, #solution .products-content p, #solution .material-boxes p, #accessories .products-content p, #accessories .material-boxes p, #reference .products-content p, #reference .material-boxes p, #associate .products-content p, #associate .material-boxes p {
+    padding-bottom: 10px;
+    margin-top: -15px;
+  }
+
+  /* line 562, scss/style.scss */
+  #more {
+    background: whitesmoke;
+    margin-top: -1%;
+  }
+  /* line 565, scss/style.scss */
+  #more h4 {
+    font-size: 33px;
+    padding-top: 5%;
+    padding-bottom: 2%;
+  }
+  /* line 572, scss/style.scss */
+  #more .container .row .more-boxes {
+    margin-bottom: 2%;
+  }
+  /* line 575, scss/style.scss */
+  #more .container .row .more-boxes .more-boxes-inner img {
+    width: 100%;
+    height: 387.578px;
+  }
+  /* line 579, scss/style.scss */
+  #more .container .row .more-boxes .more-boxes-inner:hover {
+    background: #f3c26d;
+    cursor: pointer;
+  }
+  /* line 583, scss/style.scss */
+  #more .container .row .more-boxes .more-boxes-inner p {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 15px;
+    font-family: "Open Sans";
+    font-style: italic;
+  }
+  /* line 590, scss/style.scss */
+  #more .container .row .more-boxes .more-boxes-inner a {
+    text-decoration: none;
+    color: black;
+  }
+  /* line 596, scss/style.scss */
+  #more .container .row .get-boxes {
+    width: 293.33px;
+    padding: 0;
+    margin: 0 15px;
+  }
+  /* line 600, scss/style.scss */
+  #more .container .row .get-boxes img {
+    width: 100%;
+    height: 250px;
+  }
+  /* line 604, scss/style.scss */
+  #more .container .row .get-boxes:hover {
+    background: #f3c26d;
+    cursor: pointer;
+  }
+  /* line 608, scss/style.scss */
+  #more .container .row .get-boxes p {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 15px;
+    font-family: "Open Sans";
+    font-style: italic;
+  }
+  /* line 615, scss/style.scss */
+  #more .container .row .get-boxes a {
+    text-decoration: none;
+    color: black;
+  }
+
+  /* line 625, scss/style.scss */
+  #connect h4 {
+    font-size: 33px;
+    padding-top: 3%;
+    padding-bottom: 2%;
+  }
+  /* line 630, scss/style.scss */
+  #connect p {
+    font-size: 14px;
+  }
+  /* line 633, scss/style.scss */
+  #connect span {
+    font-size: 38px;
+    padding-bottom: 4%;
+  }
+
+  /* line 639, scss/style.scss */
+  #map {
+    width: 100%;
+    height: 245px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  /* line 642, scss/style.scss */
+  #map iframe {
+    width: 100%;
+    height: 245px;
+    position: absolute;
+    z-index: -1;
+  }
+  /* line 648, scss/style.scss */
+  #map img {
+    position: absolute;
+    left: 50%;
+    margin-top: 4%;
+  }
+  /* line 653, scss/style.scss */
+  #map p {
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+  }
+
+  /* line 665, scss/style.scss */
+  footer {
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+
+  /* line 671, scss/style.scss */
+  #back-top {
+    display: none;
+  }
+  /* line 673, scss/style.scss */
+  #back-top:hover {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 680, scss/style.scss */
+  select {
+    display: none;
+  }
+
+  /* line 683, scss/style.scss */
+  nav {
+    background: white !important;
+    border-bottom: none !important;
+  }
+  /* line 686, scss/style.scss */
+  nav .container {
+    margin: 0 auto;
+  }
+  /* line 688, scss/style.scss */
+  nav .container .row {
+    height: 133px;
+    padding-top: 40px;
+  }
+  /* line 691, scss/style.scss */
+  nav .container .row li {
+    margin-right: -2px;
+  }
+  /* line 694, scss/style.scss */
+  nav .container .row a {
+    font-size: 16px;
+  }
+  /* line 696, scss/style.scss */
+  nav .container .row a:hover {
+    color: #f3c26d !important;
+    background: none;
+  }
+  /* line 702, scss/style.scss */
+  nav .container .row .active a {
+    background: none;
+    color: #f3c26d;
+  }
+  /* line 705, scss/style.scss */
+  nav .container .row .active a:hover {
+    background: none;
+  }
+
+  /* line 712, scss/style.scss */
+  #myCarousel {
+    top: 133px;
+  }
+
+  /* line 715, scss/style.scss */
+  #myCarousel img {
+    width: 100%;
+  }
+
+  /* line 719, scss/style.scss */
+  #latest-news, #get-in-touch {
+    background: url("../images/wooden-bg2.jpg");
+    margin-top: 133px;
+    padding-top: 2%;
+    padding-bottom: 5%;
+  }
+  /* line 724, scss/style.scss */
+  #latest-news #latest-news-title, #get-in-touch #latest-news-title {
+    color: white;
+    font-weight: 400;
+    font-size: 33px;
+  }
+  /* line 732, scss/style.scss */
+  #latest-news .row .latest-news-content span, #get-in-touch .row .latest-news-content span {
+    color: #69584d;
+    font-size: 65px;
+    float: left;
+  }
+  /* line 737, scss/style.scss */
+  #latest-news .row .latest-news-content .latest-news-details, #get-in-touch .row .latest-news-content .latest-news-details {
+    color: white;
+    padding-left: 30%;
+    padding-top: 2%;
+  }
+  /* line 741, scss/style.scss */
+  #latest-news .row .latest-news-content .latest-news-details h4, #get-in-touch .row .latest-news-content .latest-news-details h4 {
+    font-size: 22px;
+  }
+  /* line 747, scss/style.scss */
+  #latest-news h2, #latest-news p, #latest-news li, #get-in-touch h2, #get-in-touch p, #get-in-touch li {
+    color: white;
+    list-style: none;
+  }
+  /* line 751, scss/style.scss */
+  #latest-news h2, #get-in-touch h2 {
+    font-size: 33px;
+  }
+  /* line 754, scss/style.scss */
+  #latest-news h3, #get-in-touch h3 {
+    color: white;
+    text-decoration: underline;
+    margin-bottom: 20px;
+  }
+  /* line 759, scss/style.scss */
+  #latest-news .phone, #get-in-touch .phone {
+    background: url("../images/telephone.png") no-repeat 25% center;
+  }
+  /* line 762, scss/style.scss */
+  #latest-news .fax, #get-in-touch .fax {
+    background: url("../images/fax.png") no-repeat 25% center;
+  }
+  /* line 765, scss/style.scss */
+  #latest-news li, #get-in-touch li {
+    margin-bottom: 15px;
+  }
+  /* line 769, scss/style.scss */
+  #latest-news .get-content p, #get-in-touch .get-content p {
+    margin-bottom: 30px;
+  }
+
+  /* line 775, scss/style.scss */
+  #about-wrapper {
+    margin-top: 133px;
+    background: url("../images/wooden-bg2.jpg");
+  }
+  /* line 778, scss/style.scss */
+  #about-wrapper #about-main {
+    padding-bottom: 30px;
+  }
+  /* line 780, scss/style.scss */
+  #about-wrapper #about-main h1 {
+    font-size: 33px;
+    color: white;
+    padding-top: 35px;
+    padding-bottom: 10px;
+  }
+  /* line 786, scss/style.scss */
+  #about-wrapper #about-main h3 {
+    font-size: 22px;
+    color: white;
+    padding-bottom: 10px;
+  }
+  /* line 791, scss/style.scss */
+  #about-wrapper #about-main img {
+    width: 100%;
+    height: 268.935px;
+    padding-bottom: 20px;
+  }
+  /* line 796, scss/style.scss */
+  #about-wrapper #about-main p {
+    color: white;
+    width: 90%;
+  }
+  /* line 800, scss/style.scss */
+  #about-wrapper #about-main ul {
+    margin-left: -20px;
+  }
+  /* line 802, scss/style.scss */
+  #about-wrapper #about-main ul li {
+    background: url("../images/list_marker.png") no-repeat left center;
+    color: white;
+    font-size: 14px;
+    list-style: none;
+    padding-left: 25px;
+    margin-bottom: 15px;
+  }
+  /* line 812, scss/style.scss */
+  #about-wrapper #about-main .col-md-12 img {
+    height: 519.563px;
+  }
+
+  /* line 819, scss/style.scss */
+  #products, #material-content, #solution, #accessories, #reference, #associate {
+    background: #f5f5f5;
+    margin-top: 133px;
+    padding-bottom: 150px;
+  }
+  /* line 823, scss/style.scss */
+  #products h1, #material-content h1, #solution h1, #accessories h1, #reference h1, #associate h1 {
+    font-size: 33px;
+    color: #f3c26d;
+    font-family: "Open Sans";
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+  /* line 830, scss/style.scss */
+  #products h2, #material-content h2, #solution h2, #accessories h2, #reference h2, #associate h2 {
+    color: black;
+    font-size: 36px;
+    font-family: Arial;
+    font-weight: bold;
+    padding-top: 80px;
+    margin-bottom: -80px;
+  }
+  /* line 838, scss/style.scss */
+  #products p, #material-content p, #solution p, #accessories p, #reference p, #associate p {
+    padding-bottom: 15px;
+  }
+  /* line 841, scss/style.scss */
+  #products .products-content, #products .material-boxes, #material-content .products-content, #material-content .material-boxes, #solution .products-content, #solution .material-boxes, #accessories .products-content, #accessories .material-boxes, #reference .products-content, #reference .material-boxes, #associate .products-content, #associate .material-boxes {
+    width: 220px;
+    padding: 0;
+    margin: 15px;
+  }
+  /* line 845, scss/style.scss */
+  #products .products-content img, #products .material-boxes img, #material-content .products-content img, #material-content .material-boxes img, #solution .products-content img, #solution .material-boxes img, #accessories .products-content img, #accessories .material-boxes img, #reference .products-content img, #reference .material-boxes img, #associate .products-content img, #associate .material-boxes img {
+    width: 100%;
+    height: 158.75px;
+    margin-bottom: 40px;
+  }
+  /* line 850, scss/style.scss */
+  #products .products-content:hover:not(.material-boxes), #products .material-boxes:hover:not(.material-boxes), #material-content .products-content:hover:not(.material-boxes), #material-content .material-boxes:hover:not(.material-boxes), #solution .products-content:hover:not(.material-boxes), #solution .material-boxes:hover:not(.material-boxes), #accessories .products-content:hover:not(.material-boxes), #accessories .material-boxes:hover:not(.material-boxes), #reference .products-content:hover:not(.material-boxes), #reference .material-boxes:hover:not(.material-boxes), #associate .products-content:hover:not(.material-boxes), #associate .material-boxes:hover:not(.material-boxes) {
+    background: #f3c26d;
+  }
+  /* line 853, scss/style.scss */
+  #products .products-content a, #products .material-boxes a, #material-content .products-content a, #material-content .material-boxes a, #solution .products-content a, #solution .material-boxes a, #accessories .products-content a, #accessories .material-boxes a, #reference .products-content a, #reference .material-boxes a, #associate .products-content a, #associate .material-boxes a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    font-style: italic;
+  }
+  /* line 859, scss/style.scss */
+  #products .products-content p, #products .material-boxes p, #material-content .products-content p, #material-content .material-boxes p, #solution .products-content p, #solution .material-boxes p, #accessories .products-content p, #accessories .material-boxes p, #reference .products-content p, #reference .material-boxes p, #associate .products-content p, #associate .material-boxes p {
+    padding-bottom: 10px;
+    margin-top: -15px;
+  }
+
+  /* line 866, scss/style.scss */
+  #more {
+    background: whitesmoke;
+    margin-top: -1%;
+  }
+  /* line 869, scss/style.scss */
+  #more h4 {
+    font-size: 33px;
+    padding-top: 5%;
+    padding-bottom: 2%;
+  }
+  /* line 876, scss/style.scss */
+  #more .container .row .more-boxes {
+    margin-bottom: 2%;
+  }
+  /* line 879, scss/style.scss */
+  #more .container .row .more-boxes .more-boxes-inner img {
+    width: 100%;
+    height: 293.875px;
+  }
+  /* line 883, scss/style.scss */
+  #more .container .row .more-boxes .more-boxes-inner:hover {
+    background: #f3c26d;
+    cursor: pointer;
+  }
+  /* line 887, scss/style.scss */
+  #more .container .row .more-boxes .more-boxes-inner p {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 15px;
+    font-family: "Open Sans";
+    font-style: italic;
+  }
+  /* line 894, scss/style.scss */
+  #more .container .row .more-boxes .more-boxes-inner a {
+    text-decoration: none;
+    color: black;
+  }
+  /* line 900, scss/style.scss */
+  #more .container .row .get-boxes {
+    width: 220px;
+    padding: 0;
+    margin: 0 15px;
+  }
+  /* line 904, scss/style.scss */
+  #more .container .row .get-boxes img {
+    width: 100%;
+    height: 187px;
+  }
+  /* line 908, scss/style.scss */
+  #more .container .row .get-boxes:hover {
+    background: #f3c26d;
+    cursor: pointer;
+  }
+  /* line 912, scss/style.scss */
+  #more .container .row .get-boxes p {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 15px;
+    font-family: "Open Sans";
+    font-style: italic;
+  }
+  /* line 919, scss/style.scss */
+  #more .container .row .get-boxes a {
+    text-decoration: none;
+    color: black;
+  }
+
+  /* line 930, scss/style.scss */
+  #connect h4 {
+    font-size: 33px;
+    padding-top: 3%;
+    padding-bottom: 2%;
+  }
+  /* line 935, scss/style.scss */
+  #connect p {
+    font-size: 14px;
+  }
+  /* line 938, scss/style.scss */
+  #connect span {
+    font-size: 38px;
+    padding-bottom: 4%;
+  }
+
+  /* line 944, scss/style.scss */
+  #map {
+    width: 100%;
+    height: 245px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  /* line 947, scss/style.scss */
+  #map iframe {
+    width: 100%;
+    height: 245px;
+    position: absolute;
+    z-index: -1;
+  }
+  /* line 953, scss/style.scss */
+  #map img {
+    position: absolute;
+    left: 50%;
+    margin-top: 4%;
+  }
+  /* line 958, scss/style.scss */
+  #map p {
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+  }
+
+  /* line 970, scss/style.scss */
+  footer {
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
+
+  /* line 976, scss/style.scss */
+  #back-top {
+    display: none;
+  }
+  /* line 978, scss/style.scss */
+  #back-top:hover {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {	
+	.xs-lang  {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0, 0, 0, 0.5);
+		z-index: 1;
+	}
+	.xs-lang-content {
+		display: inline-block;
+		padding-top: 20%;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+	
+	.xs-lang-content img {
+		display: block;
+	}
+	
+	.xs-lang-content a {
+		color: white;
+		font-size: 2em;
+	}
+
+  /* line 985, scss/style.scss */
+  #menubar {
+    display: none;
+  }
+
+  /* line 988, scss/style.scss */
+  nav {
+    background: white !important;
+    border-bottom: none !important;
+	z-index: 0 !important;
+  }
+  /* line 991, scss/style.scss */
+  nav .container {
+    margin: 0 auto;
+  }
+  /* line 993, scss/style.scss */
+  nav .container .row {
+    height: 133px;
+    padding-top: 40px;
+  }
+  /* line 996, scss/style.scss */
+  nav .container .row .navbar-header {
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  /* line 1000, scss/style.scss */
+  nav .container .row #select-menu {
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    margin-bottom: 5%;
+  }
+  /* line 1005, scss/style.scss */
+  nav .container .row #select-menu select {
+    width: 100%;
+  }
+
+  /* line 1012, scss/style.scss */
+  #myCarousel {
+    top: 133px;
+  }
+
+  /* line 1015, scss/style.scss */
+  #myCarousel img {
+    width: 100%;
+  }
+
+  /* line 1019, scss/style.scss */
+  #latest-news, #get-in-touch {
+    background: url("../images/wooden-bg2.jpg");
+    margin-top: 133px;
+    padding-top: 80px;
+    padding-bottom: 5%;
+  }
+  /* line 1024, scss/style.scss */
+  #latest-news #latest-news-title, #get-in-touch #latest-news-title {
+    color: white;
+    font-weight: 400;
+    font-size: 33px;
+  }
+  /* line 1030, scss/style.scss */
+  #latest-news .row .latest-news-content, #get-in-touch .row .latest-news-content {
+    margin: 0 auto;
+  }
+  /* line 1032, scss/style.scss */
+  #latest-news .row .latest-news-content span, #get-in-touch .row .latest-news-content span {
+    color: #69584d;
+    font-size: 65px;
+    float: left;
+  }
+  /* line 1037, scss/style.scss */
+  #latest-news .row .latest-news-content .latest-news-details, #get-in-touch .row .latest-news-content .latest-news-details {
+    color: white;
+    padding-left: 18%;
+    padding-top: 2%;
+    display: block;
+  }
+  /* line 1042, scss/style.scss */
+  #latest-news .row .latest-news-content .latest-news-details h4, #get-in-touch .row .latest-news-content .latest-news-details h4 {
+    font-size: 22px;
+  }
+  /* line 1048, scss/style.scss */
+  #latest-news h2, #latest-news p, #latest-news li, #get-in-touch h2, #get-in-touch p, #get-in-touch li {
+    color: white;
+    list-style: none;
+  }
+  /* line 1052, scss/style.scss */
+  #latest-news h2, #get-in-touch h2 {
+    font-size: 33px;
+  }
+  /* line 1055, scss/style.scss */
+  #latest-news h3, #get-in-touch h3 {
+    color: white;
+    text-decoration: underline;
+    margin-bottom: 20px;
+  }
+  /* line 1060, scss/style.scss */
+  #latest-news .phone, #get-in-touch .phone {
+    background: url("../images/telephone.png") no-repeat 30% center;
+  }
+  /* line 1063, scss/style.scss */
+  #latest-news .fax, #get-in-touch .fax {
+    background: url("../images/fax.png") no-repeat 30% center;
+  }
+  /* line 1066, scss/style.scss */
+  #latest-news li, #get-in-touch li {
+    margin-bottom: 15px;
+    margin-left: 1.5%;
+  }
+  /* line 1071, scss/style.scss */
+  #latest-news .get-content p, #get-in-touch .get-content p {
+    margin-bottom: 30px;
+  }
+
+  /* line 1077, scss/style.scss */
+  #about-wrapper {
+    padding-top: 200px;
+    background: url("../images/wooden-bg2.jpg");
+  }
+  /* line 1080, scss/style.scss */
+  #about-wrapper #about-main {
+    padding-bottom: 30px;
+  }
+  /* line 1082, scss/style.scss */
+  #about-wrapper #about-main h1 {
+    font-size: 33px;
+    color: white;
+    padding-top: 35px;
+    padding-bottom: 10px;
+  }
+  /* line 1088, scss/style.scss */
+  #about-wrapper #about-main h3 {
+    font-size: 22px;
+    color: white;
+    padding-bottom: 10px;
+  }
+  /* line 1093, scss/style.scss */
+  #about-wrapper #about-main img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  /* line 1098, scss/style.scss */
+  #about-wrapper #about-main p {
+    color: white;
+    width: 90%;
+  }
+  /* line 1102, scss/style.scss */
+  #about-wrapper #about-main ul {
+    margin-left: -20px;
+  }
+  /* line 1104, scss/style.scss */
+  #about-wrapper #about-main ul li {
+    background: url("../images/list_marker.png") no-repeat left center;
+    color: white;
+    font-size: 14px;
+    list-style: none;
+    padding-left: 25px;
+    margin-bottom: 15px;
+  }
+
+  /* line 1116, scss/style.scss */
+  #products, #material-content, #solution, #accessories, #reference, #associate {
+    background: #f5f5f5;
+    margin-top: 183px;
+    padding-bottom: 150px;
+  }
+  /* line 1120, scss/style.scss */
+  #products h1, #material-content h1, #solution h1, #accessories h1, #reference h1, #associate h1 {
+    font-size: 33px;
+    color: #f3c26d;
+    font-family: "Open Sans";
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+  /* line 1127, scss/style.scss */
+  #products h2, #material-content h2, #solution h2, #accessories h2, #reference h2, #associate h2 {
+    color: black;
+    font-size: 36px;
+    font-family: Arial;
+    font-weight: bold;
+    padding-top: 80px;
+    margin-bottom: -80px;
+  }
+  /* line 1135, scss/style.scss */
+  #products p, #material-content p, #solution p, #accessories p, #reference p, #associate p {
+    padding-bottom: 15px;
+  }
+  /* line 1138, scss/style.scss */
+  #products .products-content, #products .material-boxes, #material-content .products-content, #material-content .material-boxes, #solution .products-content, #solution .material-boxes, #accessories .products-content, #accessories .material-boxes, #reference .products-content, #reference .material-boxes, #associate .products-content, #associate .material-boxes {
+    padding: 0;
+    margin: 0;
+  }
+  /* line 1141, scss/style.scss */
+  #products .products-content img, #products .material-boxes img, #material-content .products-content img, #material-content .material-boxes img, #solution .products-content img, #solution .material-boxes img, #accessories .products-content img, #accessories .material-boxes img, #reference .products-content img, #reference .material-boxes img, #associate .products-content img, #associate .material-boxes img {
+    width: 100%;
+    height: auto;
+    margin: 40px 0; padding: 0 15px;
+  }
+  /* line 1147, scss/style.scss */
+  #products .products-content:hover:not(.material-boxes), #products .material-boxes:hover:not(.material-boxes), #material-content .products-content:hover:not(.material-boxes), #material-content .material-boxes:hover:not(.material-boxes), #solution .products-content:hover:not(.material-boxes), #solution .material-boxes:hover:not(.material-boxes), #accessories .products-content:hover:not(.material-boxes), #accessories .material-boxes:hover:not(.material-boxes), #reference .products-content:hover:not(.material-boxes), #reference .material-boxes:hover:not(.material-boxes), #associate .products-content:hover:not(.material-boxes), #associate .material-boxes:hover:not(.material-boxes) {
+    background: #f3c26d;
+  }
+  /* line 1150, scss/style.scss */
+  #products .products-content a, #products .material-boxes a, #material-content .products-content a, #material-content .material-boxes a, #solution .products-content a, #solution .material-boxes a, #accessories .products-content a, #accessories .material-boxes a, #reference .products-content a, #reference .material-boxes a, #associate .products-content a, #associate .material-boxes a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    font-style: italic;
+  }
+  /* line 1156, scss/style.scss */
+  #products .products-content p, #products .material-boxes p, #material-content .products-content p, #material-content .material-boxes p, #solution .products-content p, #solution .material-boxes p, #accessories .products-content p, #accessories .material-boxes p, #reference .products-content p, #reference .material-boxes p, #associate .products-content p, #associate .material-boxes p {
+    padding-bottom: 10px;
+    margin-top: -15px;
+  }
+
+  /* line 1163, scss/style.scss */
+  #more {
+    background: whitesmoke;
+    margin-top: -1%;
+  }
+  /* line 1166, scss/style.scss */
+  #more h4 {
+    font-size: 33px;
+    padding-top: 5%;
+    padding-bottom: 2%;
+  }
+  /* line 1173, scss/style.scss */
+  #more .container .row .more-boxes, #more .container .row .get-boxes {
+    margin-bottom: 2%;
+    display: block;
+  }
+  /* line 1177, scss/style.scss */
+  #more .container .row .more-boxes .more-boxes-inner img, #more .container .row .get-boxes .more-boxes-inner img {
+    width: 100%;
+    height: auto;
+  }
+  /* line 1181, scss/style.scss */
+  #more .container .row .more-boxes .more-boxes-inner:hover, #more .container .row .get-boxes .more-boxes-inner:hover {
+    background: #f3c26d;
+    cursor: pointer;
+  }
+  /* line 1185, scss/style.scss */
+  #more .container .row .more-boxes .more-boxes-inner p, #more .container .row .get-boxes .more-boxes-inner p {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 15px;
+    font-family: "Open Sans";
+    font-style: italic;
+  }
+  /* line 1192, scss/style.scss */
+  #more .container .row .more-boxes .more-boxes-inner a, #more .container .row .get-boxes .more-boxes-inner a {
+    text-decoration: none;
+    color: black;
+  }
+
+  /* line 1203, scss/style.scss */
+  #connect h4 {
+    font-size: 33px;
+    padding-top: 3%;
+    padding-bottom: 2%;
+  }
+  /* line 1208, scss/style.scss */
+  #connect p {
+    font-size: 14px;
+  }
+  /* line 1211, scss/style.scss */
+  #connect span {
+    font-size: 38px;
+    padding-bottom: 4%;
+  }
+
+  /* line 1217, scss/style.scss */
+  #map {
+    width: 100%;
+    height: 245px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  /* line 1220, scss/style.scss */
+  #map iframe {
+    width: 100%;
+    height: 245px;
+    position: absolute;
+    z-index: -1;
+  }
+  /* line 1226, scss/style.scss */
+  #map img {
+    position: absolute;
+    left: 50%;
+    margin-top: 5%;
+  }
+  /* line 1231, scss/style.scss */
+  #map p {
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    text-align: center;
+    margin-top: 15%;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+  }
+
+  /* line 1243, scss/style.scss */
+  footer {
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 8%;	
+  }
+
+  /* line 1248, scss/style.scss */
+  #back-top {
+    display: none;
+  }
+  /* line 1250, scss/style.scss */
+  #back-top span {
+    display: none;
+  }
+}

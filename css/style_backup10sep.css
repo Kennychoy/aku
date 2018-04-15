@@ -1,0 +1,1225 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@font-face {
+  font-family: "Open Sans Condensed Light";
+  src: url(../fonts/OpenSans-CondLight.ttf);
+}
+
+/* reset browser styles */
+/* line 13, scss/style_backup10sep.scss */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 20, scss/style_backup10sep.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 23, scss/style_backup10sep.scss */
+body {
+  line-height: 1.2;
+}
+
+/* line 26, scss/style_backup10sep.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 30, scss/style_backup10sep.scss */
+ol {
+  padding-left: 1.4em;
+  list-style: decimal;
+}
+
+/* line 34, scss/style_backup10sep.scss */
+ul {
+  padding-left: 1.4em;
+  list-style: square;
+}
+
+/* line 38, scss/style_backup10sep.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 42, scss/style_backup10sep.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 47, scss/style_backup10sep.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* end reset browser styles */
+/* line 57, scss/style_backup10sep.scss */
+h1, h2, h3, h4, a, p, #latestnews, .latestnews-subject {
+  font-family: "Open Sans";
+}
+
+/* line 61, scss/style_backup10sep.scss */
+span {
+  font-family: "Open Sans Condensed Light";
+  font-weight: 300;
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 67, scss/style_backup10sep.scss */
+  #top {
+    width: 100%;
+    height: auto;
+  }
+  /* line 70, scss/style_backup10sep.scss */
+  #top #mainwrapper img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 75, scss/style_backup10sep.scss */
+  header {
+    position: fixed;
+    width: 100%;
+    height: 133px;
+    background: white;
+    display: block;
+    z-index: 1;
+  }
+  /* line 82, scss/style_backup10sep.scss */
+  header #header-container {
+    width: 100%;
+    height: 133px;
+    margin: 0 auto;
+    width: 1200px;
+  }
+  /* line 87, scss/style_backup10sep.scss */
+  header #header-container #logo-wrapper {
+    display: inline-block;
+    float: left;
+    margin-right: -250px;
+  }
+  /* line 91, scss/style_backup10sep.scss */
+  header #header-container #logo-wrapper img {
+    margin: 38px 0 35px 7px;
+  }
+  /* line 95, scss/style_backup10sep.scss */
+  header #header-container #menu {
+    display: inline-block;
+    float: right;
+    padding-right: 25px;
+    overflow: hidden;
+  }
+  /* line 100, scss/style_backup10sep.scss */
+  header #header-container #menu nav {
+    padding: 57px 0 0 0;
+  }
+  /* line 104, scss/style_backup10sep.scss */
+  header #header-container #menu nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 28px;
+  }
+  /* line 108, scss/style_backup10sep.scss */
+  header #header-container #menu nav ul li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+  }
+  /* line 112, scss/style_backup10sep.scss */
+  header #header-container #menu nav ul li a:hover {
+    color: #f3c26d;
+  }
+  /* line 119, scss/style_backup10sep.scss */
+  header #header-container #menu select {
+    display: none;
+  }
+
+  /* line 126, scss/style_backup10sep.scss */
+  #main {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  /* line 130, scss/style_backup10sep.scss */
+  #main #mainwrapper {
+    width: 100%;
+    height: auto;
+  }
+  /* line 133, scss/style_backup10sep.scss */
+  #main #mainwrapper #mainwrapper img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* line 140, scss/style_backup10sep.scss */
+  #latestnews {
+    display: block;
+    background: url("../images/wooden-bg.jpg") repeat center center;
+    color: white;
+    padding-bottom: 4%;
+  }
+  /* line 145, scss/style_backup10sep.scss */
+  #latestnews #latestnews-headline {
+    display: block;
+    text-align: center;
+    font-size: 33px;
+    padding-top: 2.8%;
+  }
+  /* line 151, scss/style_backup10sep.scss */
+  #latestnews .latestnews-news {
+    display: inline-block;
+    width: 50%;
+    padding: 18px 0 0 20%;
+  }
+  /* line 155, scss/style_backup10sep.scss */
+  #latestnews .latestnews-news .latestnews-order {
+    float: left;
+    font-size: 65px;
+    color: #69584d;
+  }
+  /* line 160, scss/style_backup10sep.scss */
+  #latestnews .latestnews-news .latestnews-content {
+    display: inline-block;
+    width: 75%;
+    padding-left: 25px;
+    position: relative;
+  }
+  /* line 165, scss/style_backup10sep.scss */
+  #latestnews .latestnews-news .latestnews-content .latestnews-subject {
+    font-size: 1.33em;
+  }
+  /* line 168, scss/style_backup10sep.scss */
+  #latestnews .latestnews-news .latestnews-content p {
+    font-size: 13px;
+  }
+}
+/* line 176, scss/style_backup10sep.scss */
+#four-container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background: #f5f5f5;
+}
+/* line 181, scss/style_backup10sep.scss */
+#four-container #four-wrapper {
+  width: 100%;
+  padding: 50px 0 100px 0;
+}
+/* line 184, scss/style_backup10sep.scss */
+#four-container #four-wrapper h4 {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 23px;
+  font-weight: 400;
+  font-size: 33px;
+}
+/* line 194, scss/style_backup10sep.scss */
+#four-container #four-wrapper #four-content {
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 197, scss/style_backup10sep.scss */
+#four-container #four-wrapper #four-content hr {
+  width: auto;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-bottom: 1px solid white;
+  padding-bottom: 40px;
+}
+/* line 205, scss/style_backup10sep.scss */
+#four-container #four-wrapper #four-content .twoboxes {
+  display: inline-block;
+}
+/* line 207, scss/style_backup10sep.scss */
+#four-container #four-wrapper #four-content .twoboxes .four-element {
+  display: inline-block;
+  width: 270px;
+  background: #f5f5f5;
+  margin: 0 11px;
+}
+/* line 212, scss/style_backup10sep.scss */
+#four-container #four-wrapper #four-content .twoboxes .four-element:hover {
+  background: #f3c26d;
+  cursor: pointer;
+}
+/* line 216, scss/style_backup10sep.scss */
+#four-container #four-wrapper #four-content .twoboxes .four-element img {
+  width: 270px;
+  height: 230px;
+  display: inline-block;
+}
+/* line 221, scss/style_backup10sep.scss */
+#four-container #four-wrapper #four-content .twoboxes .four-element p {
+  text-align: center;
+  width: 100%;
+  margin-top: -2%;
+  padding: 14px 0 14px 0;
+}
+
+/* line 234, scss/style_backup10sep.scss */
+#more-about-us {
+  width: 100%;
+  display: block;
+  background: white;
+}
+/* line 238, scss/style_backup10sep.scss */
+#more-about-us #more-content {
+  margin: auto;
+  text-align: center;
+}
+/* line 241, scss/style_backup10sep.scss */
+#more-about-us #more-content h4 {
+  padding-bottom: 27px;
+  font-size: 33px;
+  font-weight: 400;
+  padding-top: 45px;
+}
+/* line 247, scss/style_backup10sep.scss */
+#more-about-us #more-content p {
+  margin-bottom: 10px;
+  width: auto;
+}
+/* line 251, scss/style_backup10sep.scss */
+#more-about-us #more-content img {
+  width: 38px;
+  height: 34px;
+  margin-bottom: 60px;
+}
+
+/* line 259, scss/style_backup10sep.scss */
+#map-container {
+  width: 100%;
+  height: 245px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* line 263, scss/style_backup10sep.scss */
+#map-container #map-wrapper {
+  width: 100%;
+  height: auto;
+}
+/* line 266, scss/style_backup10sep.scss */
+#map-container #map-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 245px;
+  z-index: -1;
+}
+/* line 272, scss/style_backup10sep.scss */
+#map-container #map-wrapper #map-info {
+  left: 30%;
+  right: 30%;
+  position: absolute;
+  text-align: center;
+  padding-top: 5%;
+}
+/* line 278, scss/style_backup10sep.scss */
+#map-container #map-wrapper #map-info img {
+  width: 34px;
+  height: 40px;
+}
+/* line 282, scss/style_backup10sep.scss */
+#map-container #map-wrapper #map-info h4 {
+  z-index: 1;
+  color: white;
+  font-size: 18px;
+}
+
+/* line 291, scss/style_backup10sep.scss */
+#back-top {
+  background: white;
+  border-radius: 50%;
+  padding: 5px 15px;
+  border: 1px solid black;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  font-size: 32px;
+  font-weight: 900;
+  display: none;
+}
+/* line 302, scss/style_backup10sep.scss */
+#back-top:hover {
+  cursor: pointer;
+  padding: 2px 9px;
+}
+
+/* line 309, scss/style_backup10sep.scss */
+footer #footer-container {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 48px;
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 320, scss/style_backup10sep.scss */
+  #top {
+    width: 100%;
+    height: auto;
+  }
+  /* line 323, scss/style_backup10sep.scss */
+  #top #mainwrapper img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 328, scss/style_backup10sep.scss */
+  header {
+    position: fixed;
+    width: 100%;
+    height: 133px;
+    background: white;
+    display: block;
+    z-index: 1;
+  }
+  /* line 335, scss/style_backup10sep.scss */
+  header #header-container {
+    height: 133px;
+    margin: 0 auto;
+    width: 970px;
+  }
+  /* line 339, scss/style_backup10sep.scss */
+  header #header-container #logo-wrapper {
+    display: inline-block;
+    float: left;
+    margin-right: -250px;
+  }
+  /* line 343, scss/style_backup10sep.scss */
+  header #header-container #logo-wrapper img {
+    margin: 38px 0 35px 7px;
+  }
+  /* line 347, scss/style_backup10sep.scss */
+  header #header-container #menu {
+    display: inline-block;
+    float: right;
+    padding-right: 25px;
+    overflow: hidden;
+  }
+  /* line 352, scss/style_backup10sep.scss */
+  header #header-container #menu nav {
+    padding: 57px 0 0 0;
+  }
+  /* line 356, scss/style_backup10sep.scss */
+  header #header-container #menu nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 28px;
+  }
+  /* line 360, scss/style_backup10sep.scss */
+  header #header-container #menu nav ul li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+  }
+  /* line 364, scss/style_backup10sep.scss */
+  header #header-container #menu nav ul li a:hover {
+    color: #f3c26d;
+  }
+  /* line 371, scss/style_backup10sep.scss */
+  header #header-container #menu select {
+    display: none;
+  }
+
+  /* line 378, scss/style_backup10sep.scss */
+  #main {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  /* line 382, scss/style_backup10sep.scss */
+  #main #mainwrapper {
+    width: 100%;
+    height: auto;
+  }
+  /* line 385, scss/style_backup10sep.scss */
+  #main #mainwrapper #mainwrapper img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* line 392, scss/style_backup10sep.scss */
+  #latestnews {
+    display: block;
+    background: url("../images/wooden-bg.jpg") repeat center center;
+    color: white;
+    padding-bottom: 4%;
+  }
+  /* line 397, scss/style_backup10sep.scss */
+  #latestnews #latestnews-headline {
+    display: block;
+    text-align: center;
+    font-size: 33px;
+    padding-top: 2.8%;
+  }
+  /* line 403, scss/style_backup10sep.scss */
+  #latestnews .latestnews-news {
+    display: inline-block;
+    width: 50%;
+    padding: 18px 0 0 5%;
+  }
+  /* line 407, scss/style_backup10sep.scss */
+  #latestnews .latestnews-news .latestnews-order {
+    float: left;
+    font-size: 65px;
+    color: #69584d;
+  }
+  /* line 412, scss/style_backup10sep.scss */
+  #latestnews .latestnews-news .latestnews-content {
+    display: inline-block;
+    width: 75%;
+    padding-left: 25px;
+    position: relative;
+  }
+  /* line 417, scss/style_backup10sep.scss */
+  #latestnews .latestnews-news .latestnews-content .latestnews-subject {
+    font-size: 1.33em;
+  }
+  /* line 420, scss/style_backup10sep.scss */
+  #latestnews .latestnews-news .latestnews-content p {
+    font-size: 13px;
+  }
+
+  /* line 427, scss/style_backup10sep.scss */
+  #four-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background: #f5f5f5;
+  }
+  /* line 432, scss/style_backup10sep.scss */
+  #four-container #four-wrapper {
+    width: 100%;
+    padding: 50px 0 100px 0;
+  }
+  /* line 435, scss/style_backup10sep.scss */
+  #four-container #four-wrapper h4 {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 23px;
+    font-weight: 400;
+    font-size: 33px;
+  }
+  /* line 445, scss/style_backup10sep.scss */
+  #four-container #four-wrapper #four-content {
+    width: 98%;
+    margin: 0 auto;
+  }
+  /* line 448, scss/style_backup10sep.scss */
+  #four-container #four-wrapper #four-content hr {
+    width: auto;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-bottom: 1px solid white;
+    padding-bottom: 40px;
+  }
+  /* line 456, scss/style_backup10sep.scss */
+  #four-container #four-wrapper #four-content .twoboxes {
+    margin-bottom: 3%;
+  }
+  /* line 458, scss/style_backup10sep.scss */
+  #four-container #four-wrapper #four-content .twoboxes .four-element {
+    display: inline-block;
+    width: 455px;
+    background: #f5f5f5;
+    margin: 0 15px 1% 0;
+  }
+  /* line 463, scss/style_backup10sep.scss */
+  #four-container #four-wrapper #four-content .twoboxes .four-element:hover {
+    background: #f3c26d;
+    cursor: pointer;
+  }
+  /* line 467, scss/style_backup10sep.scss */
+  #four-container #four-wrapper #four-content .twoboxes .four-element img {
+    width: 455px;
+    height: 387.578px;
+    display: inline-block;
+  }
+  /* line 472, scss/style_backup10sep.scss */
+  #four-container #four-wrapper #four-content .twoboxes .four-element p {
+    text-align: center;
+    width: 100%;
+    margin-top: -2%;
+    padding: 14px 0 14px 0;
+  }
+
+  /* line 484, scss/style_backup10sep.scss */
+  #more-about-us {
+    width: 100%;
+    display: block;
+    background: white;
+  }
+  /* line 488, scss/style_backup10sep.scss */
+  #more-about-us #more-content {
+    margin: auto;
+    text-align: center;
+  }
+  /* line 491, scss/style_backup10sep.scss */
+  #more-about-us #more-content h4 {
+    padding-bottom: 27px;
+    font-size: 33px;
+    font-weight: 400;
+    padding-top: 45px;
+  }
+  /* line 497, scss/style_backup10sep.scss */
+  #more-about-us #more-content p {
+    margin-bottom: 10px;
+    width: auto;
+  }
+  /* line 501, scss/style_backup10sep.scss */
+  #more-about-us #more-content img {
+    width: 38px;
+    height: 34px;
+    margin-bottom: 60px;
+  }
+
+  /* line 509, scss/style_backup10sep.scss */
+  #back-top {
+    background: white;
+    border-radius: 50%;
+    padding: 5px 15px;
+    border: 1px solid black;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    font-size: 32px;
+    font-weight: 900;
+    display: none;
+  }
+  /* line 520, scss/style_backup10sep.scss */
+  #back-top:hover {
+    cursor: pointer;
+    padding: 2px 9px;
+  }
+
+  /* line 526, scss/style_backup10sep.scss */
+  #map-container {
+    width: 100%;
+    height: 245px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  /* line 530, scss/style_backup10sep.scss */
+  #map-container #map-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  /* line 533, scss/style_backup10sep.scss */
+  #map-container #map-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 245px;
+    z-index: -1;
+  }
+  /* line 539, scss/style_backup10sep.scss */
+  #map-container #map-wrapper #map-info {
+    left: 30%;
+    right: 30%;
+    position: absolute;
+    text-align: center;
+    padding-top: 5%;
+  }
+  /* line 545, scss/style_backup10sep.scss */
+  #map-container #map-wrapper #map-info img {
+    width: 34px;
+    height: 40px;
+  }
+  /* line 549, scss/style_backup10sep.scss */
+  #map-container #map-wrapper #map-info h4 {
+    z-index: 1;
+    color: white;
+    font-size: 18px;
+  }
+
+  /* line 559, scss/style_backup10sep.scss */
+  footer #footer-container {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 48px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 570, scss/style_backup10sep.scss */
+  #top {
+    width: 100%;
+    height: auto;
+  }
+  /* line 573, scss/style_backup10sep.scss */
+  #top #mainwrapper img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 578, scss/style_backup10sep.scss */
+  header {
+    position: fixed;
+    width: 100%;
+    height: 126px;
+    background: white;
+    display: block;
+    z-index: 1;
+  }
+  /* line 585, scss/style_backup10sep.scss */
+  header #header-container {
+    height: 126px;
+    margin: 0 auto;
+    width: 750px;
+  }
+  /* line 589, scss/style_backup10sep.scss */
+  header #header-container #logo-wrapper {
+    display: inline-block;
+    float: left;
+    margin-right: -250px;
+  }
+  /* line 593, scss/style_backup10sep.scss */
+  header #header-container #logo-wrapper img {
+    margin: 38px 0 35px 15px;
+    width: 157.5px;
+    height: 52px;
+  }
+  /* line 599, scss/style_backup10sep.scss */
+  header #header-container #menu {
+    display: inline-block;
+    float: right;
+    padding-right: 25px;
+    overflow: hidden;
+  }
+  /* line 604, scss/style_backup10sep.scss */
+  header #header-container #menu nav {
+    padding: 57px 0 0 0;
+  }
+  /* line 608, scss/style_backup10sep.scss */
+  header #header-container #menu nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 28px;
+  }
+  /* line 612, scss/style_backup10sep.scss */
+  header #header-container #menu nav ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+  }
+  /* line 616, scss/style_backup10sep.scss */
+  header #header-container #menu nav ul li a:hover {
+    color: #f3c26d;
+  }
+  /* line 623, scss/style_backup10sep.scss */
+  header #header-container #menu select {
+    display: none;
+  }
+
+  /* line 630, scss/style_backup10sep.scss */
+  #main {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  /* line 634, scss/style_backup10sep.scss */
+  #main #mainwrapper {
+    width: 100%;
+    height: auto;
+  }
+  /* line 637, scss/style_backup10sep.scss */
+  #main #mainwrapper #mainwrapper img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* line 644, scss/style_backup10sep.scss */
+  #latestnews {
+    display: block;
+    background: url("../images/wooden-bg.jpg") repeat center center;
+    color: white;
+    padding-bottom: 4%;
+  }
+  /* line 649, scss/style_backup10sep.scss */
+  #latestnews #latestnews-headline {
+    display: block;
+    text-align: center;
+    font-size: 33px;
+    padding-top: 2.8%;
+  }
+  /* line 655, scss/style_backup10sep.scss */
+  #latestnews .latestnews-news {
+    display: inline-block;
+    width: 50%;
+    padding: 18px 0 0 5%;
+  }
+  /* line 659, scss/style_backup10sep.scss */
+  #latestnews .latestnews-news .latestnews-order {
+    float: left;
+    font-size: 65px;
+    color: #69584d;
+  }
+  /* line 664, scss/style_backup10sep.scss */
+  #latestnews .latestnews-news .latestnews-content {
+    display: inline-block;
+    width: 75%;
+    padding-left: 25px;
+    position: relative;
+  }
+  /* line 669, scss/style_backup10sep.scss */
+  #latestnews .latestnews-news .latestnews-content .latestnews-subject {
+    font-size: 1.33em;
+  }
+  /* line 672, scss/style_backup10sep.scss */
+  #latestnews .latestnews-news .latestnews-content p {
+    font-size: 13px;
+  }
+
+  /* line 680, scss/style_backup10sep.scss */
+  #four-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background: #f5f5f5;
+  }
+  /* line 685, scss/style_backup10sep.scss */
+  #four-container #four-wrapper {
+    width: 100%;
+    padding: 50px 0 100px 0;
+  }
+  /* line 688, scss/style_backup10sep.scss */
+  #four-container #four-wrapper h4 {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 23px;
+    font-weight: 400;
+    font-size: 33px;
+  }
+  /* line 698, scss/style_backup10sep.scss */
+  #four-container #four-wrapper #four-content {
+    width: 98%;
+    margin: 0 auto;
+  }
+  /* line 701, scss/style_backup10sep.scss */
+  #four-container #four-wrapper #four-content hr {
+    width: auto;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-bottom: 1px solid white;
+    padding-bottom: 40px;
+  }
+  /* line 710, scss/style_backup10sep.scss */
+  #four-container #four-wrapper #four-content .twoboxes .four-element {
+    display: inline-block;
+    width: 345px;
+    background: #f5f5f5;
+    margin: 0 10px 5% 10px;
+  }
+  /* line 715, scss/style_backup10sep.scss */
+  #four-container #four-wrapper #four-content .twoboxes .four-element:hover {
+    background: #f3c26d;
+    cursor: pointer;
+  }
+  /* line 719, scss/style_backup10sep.scss */
+  #four-container #four-wrapper #four-content .twoboxes .four-element img {
+    width: 345px;
+    height: 293.875px;
+    display: inline-block;
+  }
+  /* line 724, scss/style_backup10sep.scss */
+  #four-container #four-wrapper #four-content .twoboxes .four-element p {
+    text-align: center;
+    width: 100%;
+    margin-top: -2%;
+    padding: 14px 0 14px 0;
+    font-size: 15px;
+  }
+
+  /* line 737, scss/style_backup10sep.scss */
+  #more-about-us {
+    width: 100%;
+    display: block;
+    background: white;
+  }
+  /* line 741, scss/style_backup10sep.scss */
+  #more-about-us #more-content {
+    margin: auto;
+    text-align: center;
+  }
+  /* line 744, scss/style_backup10sep.scss */
+  #more-about-us #more-content h4 {
+    padding-bottom: 27px;
+    font-size: 33px;
+    font-weight: 400;
+    padding-top: 45px;
+  }
+  /* line 750, scss/style_backup10sep.scss */
+  #more-about-us #more-content p {
+    margin-bottom: 10px;
+    width: auto;
+  }
+  /* line 754, scss/style_backup10sep.scss */
+  #more-about-us #more-content img {
+    width: 38px;
+    height: 34px;
+    margin-bottom: 60px;
+  }
+
+  /* line 762, scss/style_backup10sep.scss */
+  #map-container {
+    width: 100%;
+    height: 245px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  /* line 766, scss/style_backup10sep.scss */
+  #map-container #map-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  /* line 769, scss/style_backup10sep.scss */
+  #map-container #map-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 245px;
+    z-index: -1;
+  }
+  /* line 775, scss/style_backup10sep.scss */
+  #map-container #map-wrapper #map-info {
+    left: 30%;
+    right: 30%;
+    position: absolute;
+    text-align: center;
+    padding-top: 5%;
+  }
+  /* line 781, scss/style_backup10sep.scss */
+  #map-container #map-wrapper #map-info img {
+    width: 34px;
+    height: 40px;
+  }
+  /* line 785, scss/style_backup10sep.scss */
+  #map-container #map-wrapper #map-info h4 {
+    z-index: 1;
+    color: white;
+    font-size: 18px;
+  }
+
+  /* line 794, scss/style_backup10sep.scss */
+  #back-top {
+    background: white;
+    border-radius: 50%;
+    padding: 5px 15px;
+    border: 1px solid black;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    font-size: 32px;
+    font-weight: 900;
+    display: none;
+  }
+  /* line 805, scss/style_backup10sep.scss */
+  #back-top:hover {
+    cursor: pointer;
+    padding: 2px 9px;
+  }
+
+  /* line 812, scss/style_backup10sep.scss */
+  footer #footer-container {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 48px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 825, scss/style_backup10sep.scss */
+  #top {
+    width: 100%;
+    height: auto;
+  }
+  /* line 828, scss/style_backup10sep.scss */
+  #top #mainwrapper img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 833, scss/style_backup10sep.scss */
+  header {
+    width: 100%;
+    height: 186px;
+    background: white;
+    display: block;
+    z-index: 1;
+  }
+  /* line 840, scss/style_backup10sep.scss */
+  header #header-container {
+    height: 186px;
+    width: 100%;
+  }
+  /* line 843, scss/style_backup10sep.scss */
+  header #header-container #logo-wrapper {
+    display: table;
+    margin: 0 auto;
+    padding-top: 8%;
+    padding-bottom: 7%;
+  }
+  /* line 848, scss/style_backup10sep.scss */
+  header #header-container #logo-wrapper img {
+    width: 180px;
+    height: 60px;
+  }
+  /* line 853, scss/style_backup10sep.scss */
+  header #header-container #menu {
+    display: block;
+    margin-bottom: 5%;
+  }
+  /* line 856, scss/style_backup10sep.scss */
+  header #header-container #menu nav {
+    display: none;
+  }
+  /* line 859, scss/style_backup10sep.scss */
+  header #header-container #menu select {
+    width: 93%;
+    display: table;
+    margin: 0 auto;
+    height: 23px;
+    font-size: 1em;
+  }
+
+  /* line 870, scss/style_backup10sep.scss */
+  #main {
+    display: block;
+    width: 100%;
+    padding-top: 8%;
+  }
+  /* line 873, scss/style_backup10sep.scss */
+  #main #mainwrapper {
+    width: 100%;
+  }
+  /* line 875, scss/style_backup10sep.scss */
+  #main #mainwrapper #mainwrapper img {
+    width: 100%;
+  }
+
+  /* line 881, scss/style_backup10sep.scss */
+  #latestnews {
+    display: block;
+    background: url("../images/wooden-bg.jpg") repeat center center;
+    color: white;
+    padding-bottom: 4%;
+  }
+  /* line 886, scss/style_backup10sep.scss */
+  #latestnews #latestnews-headline {
+    display: block;
+    text-align: center;
+    font-size: 33px;
+    padding-top: 8%;
+  }
+  /* line 892, scss/style_backup10sep.scss */
+  #latestnews .latestnews-news {
+    display: block;
+    width: 90%;
+    padding: 18px 0 0 5%;
+  }
+  /* line 896, scss/style_backup10sep.scss */
+  #latestnews .latestnews-news .latestnews-order {
+    float: left;
+    font-size: 65px;
+    color: #69584d;
+  }
+  /* line 901, scss/style_backup10sep.scss */
+  #latestnews .latestnews-news .latestnews-content {
+    display: inline-block;
+    width: 75%;
+    padding-left: 25px;
+    position: relative;
+  }
+  /* line 906, scss/style_backup10sep.scss */
+  #latestnews .latestnews-news .latestnews-content .latestnews-subject {
+    font-size: 22px;
+    padding-top: 5%;
+  }
+  /* line 910, scss/style_backup10sep.scss */
+  #latestnews .latestnews-news .latestnews-content p {
+    font-size: 13px;
+    padding-bottom: 10%;
+  }
+
+  /* line 919, scss/style_backup10sep.scss */
+  #four-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background: #f5f5f5;
+  }
+  /* line 924, scss/style_backup10sep.scss */
+  #four-container #four-wrapper {
+    width: 100%;
+    padding: 50px 0 100px 0;
+  }
+  /* line 927, scss/style_backup10sep.scss */
+  #four-container #four-wrapper h4 {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 23px;
+    font-weight: 400;
+    font-size: 33px;
+  }
+  /* line 937, scss/style_backup10sep.scss */
+  #four-container #four-wrapper #four-content {
+    width: 98%;
+    margin: 0 auto;
+  }
+  /* line 940, scss/style_backup10sep.scss */
+  #four-container #four-wrapper #four-content hr {
+    width: auto;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-bottom: 1px solid white;
+    padding-bottom: 40px;
+  }
+  /* line 948, scss/style_backup10sep.scss */
+  #four-container #four-wrapper #four-content .four-element {
+    display: block;
+    width: 95%;
+    height: auto;
+    background: #f5f5f5;
+    margin: 5% auto;
+  }
+  /* line 954, scss/style_backup10sep.scss */
+  #four-container #four-wrapper #four-content .four-element:hover {
+    background: #f3c26d;
+    cursor: pointer;
+  }
+  /* line 958, scss/style_backup10sep.scss */
+  #four-container #four-wrapper #four-content .four-element img {
+    width: 100%;
+    height: auto;
+  }
+  /* line 963, scss/style_backup10sep.scss */
+  #four-container #four-wrapper #four-content .four-element p {
+    text-align: center;
+    width: 100%;
+    margin-top: -2%;
+    padding: 14px 0 14px 0;
+    font-size: 15px;
+  }
+
+  /* line 975, scss/style_backup10sep.scss */
+  #more-about-us {
+    width: 100%;
+    display: block;
+    background: white;
+  }
+  /* line 979, scss/style_backup10sep.scss */
+  #more-about-us #more-content {
+    margin: auto;
+    text-align: center;
+  }
+  /* line 982, scss/style_backup10sep.scss */
+  #more-about-us #more-content h4 {
+    padding-bottom: 27px;
+    font-size: 33px;
+    font-weight: 400;
+    padding-top: 45px;
+  }
+  /* line 988, scss/style_backup10sep.scss */
+  #more-about-us #more-content p {
+    margin-bottom: 10px;
+    width: auto;
+  }
+  /* line 992, scss/style_backup10sep.scss */
+  #more-about-us #more-content img {
+    width: 38px;
+    height: 34px;
+    margin-bottom: 60px;
+  }
+
+  /* line 1000, scss/style_backup10sep.scss */
+  #map-container {
+    width: 100%;
+    height: 245px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  /* line 1004, scss/style_backup10sep.scss */
+  #map-container #map-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  /* line 1007, scss/style_backup10sep.scss */
+  #map-container #map-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 245px;
+    z-index: -1;
+  }
+  /* line 1013, scss/style_backup10sep.scss */
+  #map-container #map-wrapper #map-info {
+    left: 30%;
+    right: 30%;
+    position: absolute;
+    text-align: center;
+    padding-top: 5%;
+  }
+  /* line 1019, scss/style_backup10sep.scss */
+  #map-container #map-wrapper #map-info img {
+    width: 34px;
+    height: 40px;
+  }
+  /* line 1023, scss/style_backup10sep.scss */
+  #map-container #map-wrapper #map-info h4 {
+    z-index: 1;
+    color: white;
+    font-size: 18px;
+  }
+
+  /* line 1032, scss/style_backup10sep.scss */
+  #back-top {
+    background: white;
+    border-radius: 50%;
+    padding: 5px 15px;
+    border: 1px solid black;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    font-size: 32px;
+    font-weight: 900;
+    display: none;
+  }
+  /* line 1043, scss/style_backup10sep.scss */
+  #back-top:hover {
+    cursor: pointer;
+    padding: 2px 9px;
+  }
+
+  /* line 1050, scss/style_backup10sep.scss */
+  footer #footer-container {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 48px;
+    padding-bottom: 50px;
+  }
+}

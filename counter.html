@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<title>Products | AKU HOLDINGS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- <link rel="shortcut icon" href="images/logo_favicon.ico" /> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+	$({countNum: $('#counter').text()}).animate({countNum: 1000}, {
+	  duration: 8000,
+	  easing:'linear',
+	  step: function() {
+		$('#counter').text(Math.floor(this.countNum));
+	  },
+	  complete: function() {
+		$('#counter').text(this.countNum);
+		alert('finished');
+	  }
+	});
+	var text = 'jQuery is simply awesome! Blah blah blah!';
+var span = $('<span/>').appendTo('body');
+ /*
+(jQuery({count:0}).animate({count:text.length}, {
+    duration: 1000,
+    step: function() {
+        span.text( text.substring(0, Math.round(this.count)) );
+    }
+});
+
+$( "li" ).animate({
+  opacity: .5,
+  height: "50%"
+}, {
+  step: function( now, fx ) {
+    var data = fx.elem.id + " " + fx.prop + ": " + now;
+    $( "body" ).append( "<div>" + data + "</div>" );
+  }
+});*/
+});	
+
+</script>
+<style>
+
+</style>
+</head>
+<body>
+<div id="counter"></div>
+<li></li>
+<p></p>
+</body>
+</html>

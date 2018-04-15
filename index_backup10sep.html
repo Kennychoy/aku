@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<title>AKU HOLDINGS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="images/logo_favicon.ico" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$(window).resize(function(){
+		var width = window.innerWidth;
+		if (width < 767) {
+			$('.four-squares').removeClass('twoboxes');
+		} else {
+			$('.four-squares').addClass('twoboxes');
+		}	
+	})
+	
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 100) {
+             $('#back-top').fadeIn();
+        } else {
+             $('#back-top').fadeOut();
+           }
+       });
+       $('#back-top').click(function () {
+           $("html, body").animate({
+               scrollTop: 0
+           }, 600);
+           return false;
+       });
+});
+
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        $("header").css('height', '100');
+    } else {
+        $("header").css('height', '133');
+    }
+}	
+</script>
+</head>
+<body>
+<div id='top'>
+<header>
+	<div id="header-container">
+		<div id="logo-wrapper">
+			<img src="images/logo3.png">
+		</div>
+		<div id="menu">
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Reference</a></li>
+					<li><a href="#">Associate</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+			<select>
+				<option>&nbsp;Navigate to...</option>
+				<option selected="selected">&nbsp;Home</option>
+				<option>&nbsp;About</option>
+				<option>&nbsp;Products</option>
+				<option>&nbsp;Reference</option>
+				<option>&nbsp;Associate</option>
+				<option>&nbsp;Contact</option>
+			</select>
+		</div>
+	</div>
+</header>
+
+<div id="main">	
+	<div id='mainwrapper'>
+	<img class="mySlides" src="images/air.jpg" style="width:100%">
+	<img class="mySlides" src="images/blur.jpg" style="width:100%">
+	<img class="mySlides" src="images/butterfly.jpeg" style="width:100%">
+	</div>
+</div>
+
+<script>
+
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+
+</script>
+</div>
+<!-- beginning of Latest News --->
+<div id='latestnews'>
+	<div id='latestnews-headline'>Latest News</div>
+	<div class="latestnews-news">
+		<div class="latestnews-order">
+			<span>01/</span>
+		</div>
+		<div class="latestnews-content">
+			<div class="latestnews-subject">
+				<h1>Hong Kong International Building and Hardware Fair</h1></br>
+			</div>
+			<div class="latestnews-para">
+				<p>
+					Booth: 8-A02</br>
+					Date: 29 OCT - 1 NOV 2014</br>
+					Location: Asia World-Expo, Hong Kong International Airport, Lantau, Hong Kong</br>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- beginning of four boxes-->
+
+<div id="four-container">
+	<div id="four-wrapper">
+		<h4>More About Us</h4>
+		<div id="four-content">
+			<div class="twoboxes four-squares">
+			<div class="four-element">
+				<img src="images/mountain.jpg">
+				<p>OUR SHITS</p>
+			</div>
+			<div class="four-element">
+				<img src="images/mountain.jpg">
+				<p>OUR SHITS</p>
+			</div>
+			</div>
+			<div class="twoboxes four-squares">
+			<div class="four-element">
+				<img src="images/mountain.jpg">
+				<p>OUR SHITS</p>
+			</div>
+			<div class="four-element">
+				<img src="images/mountain.jpg">
+				<p>OUR SHITS</p>
+			</div>
+			</div>
+		<hr>	
+		</div>
+	</div>
+</div>
+
+<!-- beginning of More About Us -->
+
+<div id="more-about-us">
+	<div id="more-content">
+		<h4>Connection With Us</h4>
+		<p>Interested in our products but still have quesitons? <br/>Why not contact us now?</p>
+		<img src="images/mail.png">
+	</div>
+</div>
+
+<!-- beginning of the Map -->
+
+<div id="map-container">
+	<div id='map-wrapper'>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3689.6129437790028!2d114.13827319999999!3d22.3682391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2shk!4v1413796654477" style="border:0"></iframe>
+	<div id="map-info">
+		<img src="images/map_marker.png">
+		<h4>
+		Flt 807, 8/F, Kum fu Industrial Building, <br/>
+		97-103 Tai chuen Ping Street, Kwai Chung, Hong Kong 
+		</h4>
+	</div>
+	</div>
+</div>
+
+<!-- Back to the top button -->
+
+<div id='back-top'>^</div>
+<!-- beginning of Footer -->
+<footer>
+	<div id="footer-container">
+		AKU HOLDINGS &copy; 2016 &bull; ALL RIGHTS RESERVED.
+	</div>
+</footer>
+</body>
+</html>

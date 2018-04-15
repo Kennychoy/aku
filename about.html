@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<title>About | AKU HOLDINGS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="shortcut icon" href="images/logo_favicon.ico" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('#back-top').css("display", "none");
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 300) {
+             $('#back-top').fadeIn();
+        } else {
+             $('#back-top').fadeOut();
+           }
+       });
+       $('#back-top').click(function () {
+           $("html, body").animate({
+               scrollTop: 0
+           }, 600);
+           return false;
+       });
+});	
+</script>
+
+</head>
+<body>
+<div id="top">
+	<nav class='navbar navbar-default navbar-fixed-top'>
+		<div class="container">
+			<div class="row">
+				<div class="navbar-header col-lg-3 col-md-3 col-sm-3 col-xs-12">
+					<a class='narbar-brand' href="index.html">
+						<img src="images/logo3.png">
+					</a>
+				</div>
+				<div class="col-lg-9 col-md-9 col-sm-9" id="menubar">
+					<ul class='nav navbar-nav navbar-right'>
+						<li><a href="index.html">Home</a></li>
+						<li class='active'><a href="about.html">About</a></li>
+						<li><a href="products.html">Products</a></li>
+						<li><a href="reference.html">Reference</a></li>
+						<li><a href="associate.html">Associate</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div id='select-menu' class='col-xs-12'>
+					<select onchange="location = this.value;">
+						<option value="#">Navigate to...</option>
+						<option value="index.html">Home</option>
+						<option value="about.html" selected="selected">About</option>
+						<option value="products.html">Products</option>
+						<option value="reference.html">Reference</option>
+						<option value="associate.html">Associate</option>
+						<option value="contact.html">Contact</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</nav>
+</div>
+
+
+<!-- About-main -->
+<div id='about-wrapper'>
+	<div class='container' id='about-main'>
+		<div class='row'>
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 about-main-content">
+				<h1 class='text-center'>What We Do</h1>
+				<h3 class='text-center'>Excessive noise, what can we do?</h3>
+				<img src='images/sunsettrees.jpg'>
+				<p>Our thoughts, behaviour and actions depend on the surroundings for our environment. Most of us would prefer to have better concentration from eliminating noisy distractions. Acoustic comfort allows us to work more effectively, or enhance our quality time during our relaxation.</p>
+				<p>With innovative ideas and advanced technology supported by creative minds, AKU provides the solution with its material to inspire a wide range of applications for building an acoustic landscape, which is functional as well as being aesthetically pleasing.</p>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 about-main-content">
+				<h1 class='text-center'>What We Solve</h1>
+				<h3 class='text-center'>Innovative Quietness Solutions</h3>
+				<img src='images/sunsettrees.jpg'>
+				<p>The offering mainly comes from its range of “AKU material”, known as AKU panel and AKU felt. These acoustic materials supports the function of noise absorption and to reduce reverberation, achieving a NRC value of 0.8 (noise reduction coefficient – with 1 being total absorption). Importantly, AKU material contains mostly recycled fiber that is environmentally friendly.</p>
+			</div>
+			<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 about-main-content" id='third-about'>
+				<h1 class='text-center'>What We Deliver</h1>
+				<h3 class='text-center'>Quality & Values Delivery</h3>
+				<img src='images/sunsettrees.jpg'>
+				<p>Our quality and values have been delivered through:</p>
+				<ul>
+					<li>Recycleable Materials</li>
+					<li>Creative Design</li>
+					<li>Quality Construction</li>
+					<li>Innovative Applications</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>	
+
+<!-- More About Us -->
+<div id="more">
+	<h4 class="text-center">More About Us</h4>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 more-boxes">
+				<div class="more-boxes-inner">
+					<a href="products.php">
+					<img class="img-responsive" src="images/volcano.png">
+					<P class="text-center">OUR PRODUCTS</p>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 more-boxes">
+				<div class="more-boxes-inner">
+					<a href="reference.php">
+					<img class="img-responsive" src="images/volcano.png">
+					<P class="text-center">OUR REFERENCE</p>
+					</a>
+				</div>
+			</div>			
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 more-boxes">
+				<div class="more-boxes-inner">
+					<a href="associate.php">
+					<img class="img-responsive" src="images/volcano.png">
+					<P class="text-center">OUR ASSOCIATE</p>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 more-boxes">
+				<div class="more-boxes-inner">
+					<a href="contact.php">
+					<img class="img-responsive" src="images/volcano.png">
+					<P class="text-center">CONTACT US</p>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-12 col-sm-12 col-xs-12" id="hr-line">
+				<hr>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Connection with us -->
+<div id='connect'>
+	<div class='container'>
+		<div class='row'>
+			<div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center'>
+				<h4>Connection With Us</h4>
+				<p>Interested in our products but still have quesitons? </br>Why not contact us now?</p>
+				<span class="glyphicon glyphicon-envelope"></span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- map -->
+<div id='map'>
+	<img src="images/map_marker.png">
+	<p>Flt 807, 8/F, Kum fu Industrial Building, <br/>97-103 Tai chuen Ping Street, Kwai Chung, Hong Kong</p>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3689.6129437790028!2d114.13827319999999!3d22.3682391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2shk!4v1413796654477" style="border:0"></iframe>
+</div>
+
+<!-- footer -->
+<footer>
+AKU HOLDINGS &copy; 2016• ALL RIGHTS RESERVED.
+</footer>
+
+<div id='back-top' class='text-center'>
+	<span><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
+</div>
+</body>
+</html>
